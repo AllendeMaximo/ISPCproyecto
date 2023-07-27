@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+a{
+    color: rgb(0, 132, 255);
+    text-decoration: none;
+}
+.principal{
+    
+    color: white;
+    height: 100vh;
+    background-image: url('./cañada.jpg');
+}
+.principal-navbar-list{
+    padding: 2vh 0px 2vh 0px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.item{
+    display: flex;
+}
+.item-info{
+    align-self: center;
+}
+.item img{
+    width: 300px;
+    height: 300px;
+    border-radius: 360px;
+}
