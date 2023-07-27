@@ -1,32 +1,82 @@
-*{
+* {
     padding: 0;
     margin: 0;
-    
 }
-a{
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+a {
     color: rgb(0, 132, 255);
     text-decoration: none;
 }
-.principal{
-    
-    color: white;
-    height: 100vh;
-    background-image: url('./cañada.jpg');
-}
+
+/* Estilos para la navbar */
 .principal-navbar-list{
-    padding: 2vh 0px 2vh 0px;
-    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para la navbar */
+    display: flex;
     justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1; /* Asegura que la navbar esté por encima del carrusel */
 }
 
-.item{
+
+.principal-navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.principal-navbar h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Estilos para el carrusel de imágenes */
+#carouselExample {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.carousel-item.active {
+    opacity: 1;
+}
+
+/* Estilos adicionales para los items */
+.item {
     display: flex;
 }
-.item-info{
+
+.item-info {
     align-self: center;
 }
-.item img{
+
+.item img {
     width: 300px;
     height: 300px;
     border-radius: 360px;
