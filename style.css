@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@200&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -28,7 +31,6 @@ a {
     color: white;
 }
 
-
 .principal-navbar a {
     color: white;
     text-decoration: none;
@@ -39,7 +41,7 @@ a {
 }
 .principal-navbar a:hover {
     color: rgb(250, 145, 9); /* Color que deseas al pasar el cursor sobre el enlace */
-  }
+}
 
 .principal-navbar h1 {
     font-size: 30px;
@@ -96,17 +98,25 @@ a {
 .carousel-item.active {
     opacity: 1;
 }
-.fundacion{
-    text-align: center;
-}
 
-.fundacion-info{
-    padding: 3rem;
-}
 .fundacion h1{
     color: rgb(17, 128, 255);
     text-align: center;
+}
 
+.title {
+    width: fit-content;
+    padding: 5vw 3vw 1vw 3vw;
+    border-radius: 3vw;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Courgette', cursive;
+}
+
+.fundaciontext {
+    font-family: 'Lisu Bosa', serif;
+    padding: 5vw 3vw 1vw 3vw;
+    border-radius: 3vw;
+    box-shadow: 0px 0.7vw 1vw rgba(0, 0, 0, 0.3);
 }
 /* Estilos adicionales para los items */
 .turismo{
@@ -119,8 +129,8 @@ a {
     color: black;
     right: 0;
     width: 70%;
-    display: flex;
-
+    padding:  30px;
+    display:flex;
 }
 
 .right{
@@ -128,13 +138,19 @@ a {
 }
 
 .item-info {
-    align-self: center;
+    font-family: 'Lisu Bosa', serif;
+    padding: 5vw 3vw 1vw 3vw;
 }
 
 .item img {
-    width: 300px;
+    width: 500px;
     height: 300px;
     border-radius: 360px;
+    max-height: 20vw;
+    justify-self: center;
+    border-radius: 5vw;
+    padding: 2vw;
+    box-shadow: 0px 0.7vw 1vw rgba(0, 0, 0, 0.3);
 }
 
 footer {
@@ -146,6 +162,7 @@ footer {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    display: block;
 }
 
 .footer-content {
