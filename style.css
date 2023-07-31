@@ -96,7 +96,13 @@ a {
 .carousel-item.active {
     opacity: 1;
 }
+.fundacion{
+    text-align: center;
+}
 
+.fundacion-info{
+    padding: 3rem;
+}
 .fundacion h1{
     color: rgb(17, 128, 255);
     text-align: center;
